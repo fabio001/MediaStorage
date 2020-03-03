@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Playing Media App"
+        android:layout_gravity="center"
+        android:textSize="30dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:onClick="RadioButton"
+            android:text="Play Button1"/>
+        <RadioButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="RadioButton"
+            android:text="Play Button2"/>
+        <RadioButton
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="RadioButton"
+            android:text="Stop"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FileRead"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_file_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FileInternet"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnInternetRead"
+        android:text="Read from internet"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="takePhotoCamera"
+        android:text="Take Photo"
+        />
+    <ImageView
+        android:id="@+id/img_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+</LinearLayout>
